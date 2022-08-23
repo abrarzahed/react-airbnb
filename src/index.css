@@ -83,17 +83,27 @@ nav button {
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
 }
 
 /* cards */
 .card {
-  width: 280px;
+  width: 358px;
+  min-width: 340px;
   overflow: hidden;
   display: grid;
   gap: 1rem;
-  padding-bottom: 1.2rem;
   color: #666;
+  cursor: pointer;
+  transition: 0.2s;
+  transform-origin: 50% 50%;
+  border-radius: 20px;
+  padding: 0.8rem 0.8rem 1.2rem 0.8rem;
+}
+.card:hover {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 .card--top {
   width: 100%;
@@ -101,6 +111,7 @@ nav button {
   padding: 0.8rem;
   border-radius: 20px;
   background-size: cover;
+  background-position: center center;
 }
 .card--top__btn {
   border: none;
@@ -130,9 +141,24 @@ nav button {
 }
 .card--bottom__price {
   margin-top: 4px;
+  display: flex;
+  align-items: center;
 }
 .card-info {
   font-weight: 300;
+}
+
+/* footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0.5rem;
+  background: #2f2f36;
+  color: #fff;
+  display: grid;
+}
+footer small {
+  color: #e5e5e5;
 }
 
 /* media query */
@@ -151,49 +177,3 @@ nav button {
 /* **************************************** 
 COMMENT: practice   
 ***************************************** */
-.contacts {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.contact-card {
-  flex-basis: 225px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 13px;
-  padding-bottom: 20px;
-  background-color: white;
-}
-
-.contact-card > img {
-  width: 100%;
-  height: auto;
-  align-self: center;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-.contact-card > h3 {
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.info-group {
-  display: flex;
-  align-items: center;
-}
-
-.info-group > img {
-  height: 11px;
-  margin-right: 8px;
-}
-
-.info-group > p {
-  margin-block: 3px;
-  font-size: 12px;
-  color: #2b283a;
-}
