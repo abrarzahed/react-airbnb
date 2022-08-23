@@ -90,8 +90,8 @@ nav button {
 
 /* cards */
 .card {
-  width: 358px;
-  min-width: 340px;
+  max-width: 358px;
+  /* min-width: 340px; */
   overflow: hidden;
   display: grid;
   gap: 1rem;
