@@ -1,5 +1,3 @@
-import card1Img from "../src/assets/images/card1.jpg";
-
 export default function Card(props) {
   return (
     <div className="card">
